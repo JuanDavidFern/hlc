@@ -4,9 +4,17 @@
         <servlet-name>s2</servlet-name>
         <servlet-class>s2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>s1</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>s2</servlet-name>
         <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/s1</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

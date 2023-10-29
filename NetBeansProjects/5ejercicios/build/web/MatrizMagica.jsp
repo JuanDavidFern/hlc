@@ -25,7 +25,7 @@
             </form>
                 <form action="MatrizMagica.jsp" method="post">
                     <input type="hidden" name="desc" value="<% out.println(desc); %>">
-                    <input type="number" name="n">
+                    <input type="number" name="n" min="1" step="2">
                     <input type="submit" name="enviar" value="enviar">
                 </form>
                     <%
@@ -57,7 +57,7 @@
         
          <h1>Matriz Mágica introduce un número impar</h1>
          <form action="MatrizMagica.jsp" method="post">
-            Introduce el número de filas y columnas: <input type="number" name="n"><br>
+            Introduce el número de filas y columnas: <input type="number" name="n" min="1" step="2"><br>
             <% String desc = request.getAttribute("desc").toString(); %>
             <input type="hidden" name="desc" value="<% out.println(desc); %>">
             <input type="submit" name="enviar"value="enviar"><br>
